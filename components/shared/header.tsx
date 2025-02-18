@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Button } from '../ui';
 import { User } from 'lucide-react';
 import { ShoppingCart} from  'lucide-react';
+import { Input } from '../ui';
 
 interface Props {
     className?: string;
@@ -25,7 +26,9 @@ export const Header: React.FC<Props> = ({ className }) => {
                             <p>Вкусней уже некуда</p>
                         </div>
                         </div>
-
+                        <div>
+                            <Input type='text' placeholder='искать' size={90}/>
+                        </div>
                     {/* правая часть */}
                     <div className='flex items-center gap-4'>
                     <Button variant={"outline"} className='gap-2'>
