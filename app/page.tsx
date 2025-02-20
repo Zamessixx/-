@@ -1,16 +1,16 @@
 import { Container, Header, Title } from "@/components/shared"
+import { TopBar } from "@/components/shared/top-bar";
+
 
 
 export default function Home() {
   return (
     <>
     <Header/>
-    <Container className='flex items-center justify-between py-8'>
-    <Title  text="ррррр" className='text-2x1 uppercase font-black ' size='lg'/>
-
-
-  
+    <Container className='mt-10'>
+    <Title  text="Все пиццы" className='font-extrabold' size='lg'/>
 </Container>
+<TopBar/>
 </>
   );
 }
